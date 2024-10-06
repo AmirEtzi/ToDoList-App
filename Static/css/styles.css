@@ -1,0 +1,85 @@
+:root {
+  --bg-color: #f8f9fa; /* Light background */
+  --text-color: #212529; /* Dark text */
+  --card-bg-color: #ffffff; /* White card background */
+  --card-border-color: #e3e3e3; /* Card border */
+  --input-bg-color: #ffffff; /* White input background */
+  --input-border-color: #ced4da; /* Input border color */
+  --input-text-color: #495057; /* Dark input text */
+  --btn-bg-color: #007bff; /* Primary button color */
+  --btn-text-color: #ffffff; /* Button text color */
+  --card-shadow: rgba(0, 0, 0, 0.1); /* Light shadow */
+  --title-color: #212529; /* Dark text for title */
+  --subtitle-color: #6c757d; /* Muted text for date */
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e1e1e; /* Dark background */
+  --text-color: #f1f1f1; /* Light text */
+  --card-bg-color: #2c2c2c; /* Darker card background */
+  --card-border-color: #444444; /* Darker card border */
+  --input-bg-color: #3a3a3a; /* Darker input background */
+  --input-border-color: #555555; /* Darker input border */
+  --input-text-color: #e0e0e0; /* Lighter input text */
+  --btn-bg-color: #6f42c1; /* Purple button */
+  --btn-text-color: #ffffff; /* Button text color */
+  --card-shadow: rgba(255, 255, 255, 0.1); /* Light shadow in dark mode */
+  --title-color: #f1f1f1; /* Light text for title in dark mode */
+  --subtitle-color: #cccccc; /* Lighter muted text for date in dark mode */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1,
+h5,
+p,
+label,
+input,
+select,
+textarea,
+a {
+  color: var(--text-color);
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  box-shadow: 0 0.5rem 1rem var(--card-shadow);
+}
+
+input,
+select,
+textarea {
+  background-color: var(--input-bg-color);
+  border: 1px solid var(--input-border-color);
+  color: var(--input-text-color);
+}
+
+input::placeholder {
+  color: var(--input-text-color);
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  border: none;
+}
+
+a.link-dark {
+  color: var(--text-color);
+}
+
+a.link-dark:hover {
+  color: var(--btn-bg-color);
+}
+.card-title a {
+  color: var(--title-color); /* Task title */
+}
+
+.card-subtitle {
+  color: var(--subtitle-color); /* Creation date */
+}
